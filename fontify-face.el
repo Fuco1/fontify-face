@@ -6,7 +6,8 @@
 ;; Maintainer: Matúš Goljer <matus.goljer@gmail.com>
 ;; Version: 1.0.0
 ;; Created: 10th April 2018
-;; Package-requires: ()
+;; URL: https://github.com/Fuco1/fontify-face
+;; Package-requires: ((emacs "24"))
 ;; Keywords: faces
 
 ;; This program is free software; you can redistribute it and/or
@@ -23,6 +24,10 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
+
+;; Fontify symbols representing faces with that face.
+
+;; See https://github.com/Fuco1/fontify-face
 
 ;;; Code:
 
