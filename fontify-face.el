@@ -4,7 +4,7 @@
 
 ;; Author: Matúš Goljer <matus.goljer@gmail.com>
 ;; Maintainer: Matúš Goljer <matus.goljer@gmail.com>
-;; Version: 0.0.1
+;; Version: 1.0.0
 ;; Created: 10th April 2018
 ;; Package-requires: ()
 ;; Keywords: faces
