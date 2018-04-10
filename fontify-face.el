@@ -6,7 +6,7 @@
 ;; Maintainer: Matúš Goljer <matus.goljer@gmail.com>
 ;; Version: 0.0.1
 ;; Created: 10th April 2018
-;; Package-requires: ((dash "2.10.0"))
+;; Package-requires: ()
 ;; Keywords: faces
 
 ;; This program is free software; you can redistribute it and/or
