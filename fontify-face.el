@@ -27,10 +27,10 @@
 ;;; Code:
 
 (defun fontify-face-colorize-matched-face ()
-  "Fontify the last matched region.
+  "Return face for fontifying the last match.
 
-The face used to fontify the region is the text of the region if
-it represents a face, otherwise nothing happens."
+The face used to fontify the region is the text of the matched
+region if it represents a face, no face is returned."
   (let ((match (match-string 0)))
     (when (facep match) match)))
 
