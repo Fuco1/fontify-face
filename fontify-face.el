@@ -55,6 +55,7 @@ Note: instead of using constants we use functions which are not
 expected to change very much.  This is to make toggling the
 display somewhat reliable during updates.")
 
+;;;###autoload
 (define-minor-mode fontify-face-mode
   "Fontify symbols representing faces with that face."
   :lighter " 💡"
