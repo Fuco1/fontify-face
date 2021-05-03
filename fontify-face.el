@@ -31,6 +31,19 @@
 
 ;;; Code:
 
+(defgroup fontify-face ()
+  "fontify-face minor mode."
+  :group 'editing
+  :prefix "fontify-face-")
+
+(defcustom fontify-face-mode-lighter " FF"
+  "Mode line lighter for the `fontify-face-mode'."
+  :type '(radio
+          (const :tag "Emoji (💡)" " 💡")
+          (const :tag "Ascii (FF)" " FF")
+          (string :tag "String"))
+  :group 'fontify-face)
+
 (defun fontify-face-colorize-matched-face ()
   "Return face for fontifying the last match.
 
@@ -58,7 +71,7 @@ display somewhat reliable during updates.")
 ;;;###autoload
 (define-minor-mode fontify-face-mode
   "Fontify symbols representing faces with that face."
-  :lighter " 💡"
+  :lighter fontify-face-mode-lighter
   (if fontify-face-mode
       (font-lock-add-keywords nil fontify-face-keywords)
     (font-lock-remove-keywords nil fontify-face-keywords)))
