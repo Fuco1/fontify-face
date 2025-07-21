@@ -7,7 +7,7 @@
 ;; Version: 1.0.0
 ;; Created: 10th April 2018
 ;; URL: https://github.com/Fuco1/fontify-face
-;; Package-requires: ((emacs "24"))
+;; Package-requires: ((emacs "25"))
 ;; Keywords: faces
 
 ;; This program is free software; you can redistribute it and/or
@@ -74,7 +74,8 @@ display somewhat reliable during updates.")
   :lighter fontify-face-mode-lighter
   (if fontify-face-mode
       (font-lock-add-keywords nil fontify-face-keywords)
-    (font-lock-remove-keywords nil fontify-face-keywords)))
+    (font-lock-remove-keywords nil fontify-face-keywords))
+  (font-lock-flush))
 
 (provide 'fontify-face)
 ;;; fontify-face.el ends here
