@@ -64,7 +64,8 @@ region if it represents a face, no face is returned."
    limit t))
 
 (defconst fontify-face-keywords
-  `((fontify-face-find-next-symbol 0 (funcall 'fontify-face-colorize-matched-face)))
+  '((fontify-face-find-next-symbol
+     0 (funcall 'fontify-face-colorize-matched-face)))
   "Keywords used for highlighting faces.
 
 Note: instead of using constants we use functions which are not
