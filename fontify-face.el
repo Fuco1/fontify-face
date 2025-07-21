@@ -1,4 +1,4 @@
-;;; fontify-face.el --- Fontify symbols representing faces with that face. -*- lexical-binding: t -*-
+;;; fontify-face.el --- Fontify symbols representing faces with that face  -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2018 Matúš Goljer
 
