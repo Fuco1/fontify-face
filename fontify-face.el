@@ -7,7 +7,7 @@
 ;; Version: 1.0.0
 ;; Created: 10th April 2018
 ;; URL: https://github.com/Fuco1/fontify-face
-;; Package-requires: ((emacs "25"))
+;; Package-requires: ((emacs "25.1"))
 ;; Keywords: faces
 
 ;; This program is free software; you can redistribute it and/or
