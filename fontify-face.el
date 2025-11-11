@@ -1,4 +1,4 @@
-;;; fontify-face.el --- Fontify symbols representing faces with that face. -*- lexical-binding: t -*-
+;;; fontify-face.el --- Fontify symbols representing faces with that face  -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2018 Matúš Goljer
 
@@ -7,7 +7,7 @@
 ;; Version: 1.0.0
 ;; Created: 10th April 2018
 ;; URL: https://github.com/Fuco1/fontify-face
-;; Package-requires: ((emacs "24"))
+;; Package-requires: ((emacs "25.1"))
 ;; Keywords: faces
 
 ;; This program is free software; you can redistribute it and/or
@@ -25,9 +25,12 @@
 
 ;;; Commentary:
 
-;; Fontify symbols representing faces with that face.
+;; This package defines the mode `fontify-face-mode', which
+;; fontifies symbols representing faces with the that face.
 
-;; See https://github.com/Fuco1/fontify-face
+;; During theme or package development it is useful to see how
+;; the faces look directly during development.  This saves time
+;; and provides thighter feedback loop.  Happy theming!
 
 ;;; Code:
 
@@ -61,7 +64,8 @@ region if it represents a face, no face is returned."
    limit t))
 
 (defconst fontify-face-keywords
-  `((fontify-face-find-next-symbol 0 (funcall 'fontify-face-colorize-matched-face)))
+  '((fontify-face-find-next-symbol
+     0 (funcall 'fontify-face-colorize-matched-face)))
   "Keywords used for highlighting faces.
 
 Note: instead of using constants we use functions which are not
@@ -74,7 +78,8 @@ display somewhat reliable during updates.")
   :lighter fontify-face-mode-lighter
   (if fontify-face-mode
       (font-lock-add-keywords nil fontify-face-keywords)
-    (font-lock-remove-keywords nil fontify-face-keywords)))
+    (font-lock-remove-keywords nil fontify-face-keywords))
+  (font-lock-flush))
 
 (provide 'fontify-face)
 ;;; fontify-face.el ends here
